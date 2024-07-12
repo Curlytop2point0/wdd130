@@ -1,61 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Quicksand:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}  
-nav {
-    background-color: black;
-    padding: 10px;
-}
-nav a {
-    color: #EAAA00;
-    display: block;
-    padding: 20px;
-}
-h1 {
-    color: #000;
-}
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid #EAAA00;
-    padding: 2px;
-    box-shadow: 0 0 30px #000;
-    float: right;
-}
-p {
-    padding: 0;
-}
-main {
-    max-width: 840px;
-}
-aside {
-    position: relative;
-    width: 20em;
-    text-align: center;
-}
-aside img {
-    width: 200px;
-    height: auto;
-}
-aside h2 {
-    position: absolute;
-    top: 47px; /* adjust as needed */
-    left: 150px; /* adjust as needed */
-    color: #eeee;
-}
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
 }
 
-/* Class Selectors */
+.cormorant {
+    font-family: "Cormorant", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #606c38;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+h1 {
+    color: #333;
+    border-bottom: 1px solid #283618;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+aside img {
+    width: 225px;
+    height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px; 
+    left: 150px; 
+    color: #333;
+}
+
+/*class selectors*/
 
 .box {
     margin: 1rem;
-    border: 1px solid rgba(234,170,0); /* adjust as needed */
+    border: 1px solid #333;
     padding: 1rem;
-    background-color: #f0f0f0; /* adjust as needed */
-    color: #333; /* adjust as needed */
+    background-color: #f0f0f0;
+    color: #333; 
 }
+
+
