@@ -170,3 +170,27 @@ footer{
     color: var(--accent2-color);
     background-color: var(--accent1-color)
 }
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('images/hero.jpg') no-repeat center center/cover;
+  }
+  
+  .newsletter form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cta {
+    text-align: center;
+    padding: 2em;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+  }
+  
